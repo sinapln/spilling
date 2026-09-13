@@ -1,6 +1,4 @@
-/* =========================
-   GENERAL STYLES
-   ========================= */
+/* GENERAL STYLES */
 
 * {
     box-sizing: border-box;
@@ -19,9 +17,7 @@ body {
     line-height: 1.6;
 }
 
-/* =========================
-   HEADER & NAVIGATION
-   ========================= */
+/* HEADER & NAVIGATION */
 
 header {
     background-color: #ffffff;
@@ -90,9 +86,7 @@ header {
     width: 100%;
 }
 
-/* =========================
-   MAIN CONTENT
-   ========================= */
+/* MAIN CONTENT */
 
 main {
     max-width: 1100px;
@@ -100,9 +94,7 @@ main {
     padding: 70px 25px;
 }
 
-/* =========================
-   HEADINGS
-   ========================= */
+/* HEADINGS */
 
 h1 {
     font-size: clamp(2rem, 5vw, 3.2rem);
@@ -124,9 +116,7 @@ p {
     margin-bottom: 15px;
 }
 
-/* =========================
-   BUTTONS
-   ========================= */
+/* BUTTONS */
 
 .button,
 button {
@@ -157,9 +147,7 @@ button:hover {
     box-shadow: 0 5px 12px rgba(23, 40, 25, 0.12);
 }
 
-/* =========================
-   HOME PAGE - HERO
-   ========================= */
+/* HOME PAGE - HERO */
 
 .hero {
     min-height: 500px;
@@ -205,9 +193,7 @@ button:hover {
     box-shadow: 0 12px 30px rgba(23, 40, 25, 0.15);
 }
 
-/* =========================
-   SKILLS
-   ========================= */
+/* SKILLS */
 
 .skills {
     padding: 50px 0;
@@ -266,9 +252,7 @@ button:hover {
     font-size: 0.95rem;
 }
 
-/* =========================
-   ABOUT SECTION
-   ========================= */
+/* ABOUT SECTION */
 
 .about {
     background-color: #ffffff;
@@ -287,9 +271,7 @@ button:hover {
     color: #38483e;
 }
 
-/* =========================
-   CV PAGE
-   ========================= */
+/* CV PAGE */
 
 .cv-header {
     margin-bottom: 45px;
@@ -420,78 +402,74 @@ main > section:has(.button) {
     margin-top: 15px;
 }
 
-/* =========================
-   CONTACT PAGE
-   ========================= */
+/* CONTACT PAGE */
 
-main > section:first-child {
-    margin-bottom: 40px;
+.contact-intro {
+    max-width: 700px;
+    margin-bottom: 50px;
 }
 
-form {
-    max-width: 750px;
+.contact-intro > p:first-child {
+    color: #917954;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
 
+.contact-intro p:last-child {
+    color: #4c5a51;
+    font-size: 1.05rem;
+}
+
+.contact-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.contact-card {
     background-color: #ffffff;
 
-    padding: 35px;
+    padding: 35px 30px;
 
     border-radius: 10px;
 
     box-shadow: 0 5px 20px rgba(23, 40, 25, 0.06);
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px 20px;
-}
-
-form label {
-    font-weight: 600;
-    margin-top: 10px;
-}
-
-form input,
-form textarea {
-    width: 100%;
-
-    border: 1px solid #c8cbc8;
-    border-radius: 5px;
-
-    padding: 12px;
-
-    font-family: inherit;
-    font-size: 1rem;
-
-    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 
     transition:
-        border-color 0.3s ease,
+        transform 0.3s ease,
         box-shadow 0.3s ease;
 }
 
-form input:focus,
-form textarea:focus {
-    outline: none;
+.contact-card:hover {
+    transform: translateY(-6px);
 
-    border-color: #917954;
-
-    box-shadow: 0 0 0 3px rgba(145, 121, 84, 0.12);
+    box-shadow:
+        0 12px 25px rgba(23, 40, 25, 0.12);
 }
 
-form textarea {
-    min-height: 160px;
-    resize: vertical;
-
-    grid-column: 1 / -1;
+.contact-card h2 {
+    margin-bottom: 15px;
 }
 
-form button {
-    justify-self: start;
-    margin-top: 10px;
+.contact-card p {
+    color: #59665e;
+    margin-bottom: 25px;
+    flex-grow: 1;
 }
 
-/* =========================
-   FOOTER
-   ========================= */
+@media (max-width: 800px) {
+
+    .contact-options {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* FOOTER */
 
 footer {
     background-color: #b7c0b9;
@@ -516,9 +494,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* =========================
-   RESPONSIVE DESIGN
-   ========================= */
+/* RESPONSIVE DESIGN */
 
 @media (max-width: 800px) {
 
