@@ -39,9 +39,16 @@ header {
 }
 
 .navbar img {
-    width: 100px;
-    height: 100px;
+    width: 180px;
+    height: auto;
     object-fit: contain;
+}
+
+@media (max-width: 500px) {
+    .navbar img {
+        width: 140px;
+        height: auto;
+    }
 }
 
 .nav-links {
