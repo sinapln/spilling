@@ -406,39 +406,49 @@ main > section:has(.button) {
 
 .contact-intro {
     max-width: 700px;
-    margin-bottom: 50px;
+    margin: 30px auto 55px;
+    text-align: center;
 }
 
-.contact-intro > p:first-child {
+.section-label {
     color: #917954;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-weight: bold;
     letter-spacing: 2px;
+    margin-bottom: 12px;
 }
 
-.contact-intro p:last-child {
+.contact-intro h1 {
+    margin-bottom: 20px;
+}
+
+.contact-intro > p:last-child {
     color: #4c5a51;
     font-size: 1.05rem;
+    max-width: 650px;
+    margin: 0 auto;
 }
 
+
+/* Contact cards */
+
 .contact-options {
+    max-width: 850px;
+    margin: 0 auto;
+
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 25px;
 }
 
 .contact-card {
     background-color: #ffffff;
 
-    padding: 35px 30px;
+    padding: 35px;
 
     border-radius: 10px;
 
     box-shadow: 0 5px 20px rgba(23, 40, 25, 0.06);
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
 
     transition:
         transform 0.3s ease,
@@ -446,29 +456,89 @@ main > section:has(.button) {
 }
 
 .contact-card:hover {
-    transform: translateY(-6px);
+    transform: translateY(-5px);
 
     box-shadow:
         0 12px 25px rgba(23, 40, 25, 0.12);
 }
 
+
+/* Contact icons */
+
+.contact-icon {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    background-color: #b7c0b9;
+    color: #172819;
+
+    border-radius: 50%;
+
+    font-weight: bold;
+    font-size: 1rem;
+}
+
 .contact-card h2 {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 .contact-card p {
     color: #59665e;
-    margin-bottom: 25px;
-    flex-grow: 1;
+    margin-bottom: 20px;
 }
 
-@media (max-width: 800px) {
+
+/* Contact links */
+
+.contact-link {
+    color: #917954;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #172819;
+}
+
+
+/* CV link */
+
+.contact-cv {
+    text-align: center;
+
+    margin: 55px auto 20px;
+}
+
+.contact-cv p {
+    color: #59665e;
+    margin-bottom: 15px;
+}
+
+
+/* Contact page mobile layout */
+
+@media (max-width: 700px) {
 
     .contact-options {
         grid-template-columns: 1fr;
     }
 
+    .contact-card {
+        padding: 30px;
+    }
+
 }
+
 /* FOOTER */
 
 footer {
