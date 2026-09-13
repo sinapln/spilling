@@ -1,0 +1,214 @@
+/* general rules */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Montserrat", Arial, sans-serif;
+    background-color:#e5e3df;
+    color:#070c07;
+    line-height:1.6;
+}
+
+main{
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+h1,h2,h3{
+    font-weight:600;
+    margin-bottom:10px;
+}
+
+p{
+    margin-bottom:15px;
+}
+
+/* navigation bar rules */
+header{
+    background:#ffffff;
+    border-bottom:1px solid #d9d9d9;
+}
+
+.navbar{
+    max-width:1100px;
+    margin:auto;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#070c07;
+    font-weight:500;
+}
+
+.nav-links a:hover{
+    color:#917954;
+}
+
+/* hero rules */
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+    margin-bottom:60px;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:36px;
+}
+
+.hero-text h2{
+    color:#6F7C72;
+    margin-bottom:15px;
+}
+
+.hero-image img{
+    width:280px;
+    border-radius:10px;
+    float:right;
+}
+
+/* button rules */
+.button{
+    display:inline-block;
+    padding:10px 20px;
+    background:#b7c0b9;
+    color:#070c07;
+    text-decoration:none;
+    border-radius:6px;
+    margin-top:10px;
+    font-weight:500;
+}
+
+.button:hover{
+    background:#98a69b;
+}
+
+/* skill rules */
+.skills{
+    margin-bottom:60px;
+}
+
+.skills-list{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+.skills-list li{
+    background:#ffffff;
+    padding:20px;
+    border-radius:8px;
+    text-align:center;
+    flex:1;
+}
+
+.skills-list img{
+    width:50px;
+    margin-bottom:10px;
+}
+
+/* about section rules */
+.about{
+    background:#ffffff;
+    padding:30px;
+    border-radius:8px;
+}
+
+/* grad img rule */
+.grad-image img{
+    width:200px;
+    height:auto;
+    float: right;
+    border-radius:10px;
+    margin-left:20px;
+}
+
+/* table rules */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    overflow-x: auto;
+    display: block;
+}
+
+th, td {
+    padding: 12px 18px;
+    text-align: left;
+}
+
+/* disclaimer on the form and download button */
+.disclaimer{
+    margin-top:15px;
+    font-size:14px;
+    color:#6F7C72;
+    font-style:italic;
+}
+
+/* footer rules */
+footer{
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+    background:#b7c0b9;
+}
+
+footer a{
+    color:#070c07;
+    text-decoration:none;
+}
+
+footer a:hover{
+    text-decoration:underline;
+}
+
+/* for mobile */
+@media (max-width:768px){
+
+.navbar{
+flex-direction:column;
+gap:10px;
+}
+
+.nav-links{
+flex-direction:column;
+align-items:center;
+gap:10px;
+}
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-image img{
+width:200px;
+margin-top:20px;
+}
+
+.skills-list{
+flex-direction:column;
+display: block;
+overflow-x: auto;
+}
+
+}
