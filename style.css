@@ -44,13 +44,6 @@ header {
     object-fit: contain;
 }
 
-@media (max-width: 500px) {
-    .navbar img {
-        width: 140px;
-        height: auto;
-    }
-}
-
 .nav-links {
     list-style: none;
 
@@ -648,8 +641,8 @@ footer a:hover {
     }
 
     .navbar img {
-        width: 55px;
-        height: 55px;
+        width: 140px;
+        height: auto;
     }
 
     .nav-links {
